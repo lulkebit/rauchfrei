@@ -14,3 +14,5 @@ inputs.forEach((input) => {
         localStorage.setItem(input.name, input.value);
     });
 });
+
+console.log('Days: ' + localStorage.getItem('days'));

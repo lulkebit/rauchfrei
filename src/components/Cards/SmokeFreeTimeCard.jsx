@@ -11,7 +11,9 @@ const SmokeFreeTimeCard = ({ cardTitle, iconClass }) => {
         const startDate = new Date(dateOfReturn);
         const currentDate = new Date();
         const elapsedMilliseconds = currentDate - startDate;
+        const days = Math.floor(elapsedMilliseconds / (1000 * 60 * 60 * 24));
         setTimeElapsed(elapsedMilliseconds);
+        localStorage.setItem('days', days);
       }
     }, 1000);
   
@@ -19,11 +21,14 @@ const SmokeFreeTimeCard = ({ cardTitle, iconClass }) => {
   }, []);
 
   const formatTime = (milliseconds) => {
-    const seconds = Math.floor(milliseconds / 1000);
+    let seconds = Math.floor(milliseconds / 1000);
+    const days = Math.floor(seconds / (24 * 3600));
+    seconds %= (24 * 3600);
     const hours = Math.floor(seconds / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
+    seconds %= 3600;
+    const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
-    return `${hours} Stunden ${minutes} Minuten ${remainingSeconds} Sekunden`;
+    return `${days} Tage ${hours} Stunden ${minutes} Minuten ${remainingSeconds} Sekunden`;
   };
 
   return (
