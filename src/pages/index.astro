@@ -2,7 +2,8 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FunFact from '../components/FunFact.astro';
-import Card from '../components/Card.astro';
+import Card from '../components/Card';
+import SmokeFreeTimeCard from '../components/SmokeFreeTimeCard';
 const pageTitle = "Übersicht";
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -11,9 +12,9 @@ const pageTitle = "Übersicht";
 		<FunFact />
 	</Card>
 
-	<Card cardTitle="Rauchfreie Zeit" iconClass="fa-solid fa-ban-smoking">
-		Du bist <b>HH Stunden MM Minuten SS Sekunden</b> rauchfrei! Weiter  so!
-	</Card>
+	<SmokeFreeTimeCard cardTitle="Rauchfreie Zeit" iconClass="fa-solid fa-ban-smoking" client:load>
+			
+	</SmokeFreeTimeCard>
 
 	<Card cardTitle="Finanzen" iconClass="fa-solid fa-money-bill">
 		Du hast bereits <b>X€</b> gespart!<br/>
@@ -25,4 +26,7 @@ const pageTitle = "Übersicht";
 		Auf ein Jahr gerechnet sind das <b>XX.XXX Stück</b>
 	</Card>
 
+	<script>
+		import "../scripts/index.js";
+	</script>
 </BaseLayout>
