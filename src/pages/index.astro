@@ -2,8 +2,8 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FunFact from '../components/FunFact.astro';
-import Card from '../components/Card';
-import SmokeFreeTimeCard from '../components/SmokeFreeTimeCard';
+import Card from '../components/Cards/Card';
+import SmokeFreeTimeCard from '../components/Cards/SmokeFreeTimeCard';
 const pageTitle = "Übersicht";
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -12,9 +12,7 @@ const pageTitle = "Übersicht";
 		<FunFact />
 	</Card>
 
-	<SmokeFreeTimeCard cardTitle="Rauchfreie Zeit" iconClass="fa-solid fa-ban-smoking" client:load>
-			
-	</SmokeFreeTimeCard>
+	<SmokeFreeTimeCard cardTitle="Rauchfreie Zeit" iconClass="fa-solid fa-ban-smoking" client:load />
 
 	<Card cardTitle="Finanzen" iconClass="fa-solid fa-money-bill">
 		Du hast bereits <b>X€</b> gespart!<br/>

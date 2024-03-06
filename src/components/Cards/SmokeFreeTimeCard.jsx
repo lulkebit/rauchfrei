@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'preact/hooks';
-import Card from '../components/Card';
+import Card from './Card';
 
 const SmokeFreeTimeCard = ({ cardTitle, iconClass }) => {
   const [timeElapsed, setTimeElapsed] = useState(0);
