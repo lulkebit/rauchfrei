@@ -5,6 +5,7 @@ import FunFact from '../components/FunFact.astro';
 import Card from '../components/Cards/Card';
 import SmokeFreeTimeCard from '../components/Cards/SmokeFreeTimeCard';
 import SavingsCard from '../components/Cards/SavingsCard';
+import ConsumeCard from '../components/Cards/ConsumeCard';
 const pageTitle = "Übersicht";
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -17,9 +18,6 @@ const pageTitle = "Übersicht";
 
 	<SavingsCard cardTitle="Finanzen" iconClass="fa-solid fa-money-bill" client:load />
 
-	<Card cardTitle="Konsum" iconClass="fa-solid fa-wand-magic-sparkles">
-		Du hast bereits <b>XX,XX Zigaretten</b> widerstanden.<br/>
-		Auf ein Jahr gerechnet sind das <b>XX.XXX Stück</b>
-	</Card>
+	<ConsumeCard cardTitle="Konsum" iconClass="fa-solid fa-wand-magic-sparkles" client:load />
 
 </BaseLayout>

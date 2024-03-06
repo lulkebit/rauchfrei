@@ -15,6 +15,10 @@ const SavingsCard = ({ cardTitle, iconClass }) => {
         const cigsPerPack = localStorage.getItem('cigsPerPack');
         const pricePerPack = localStorage.getItem('pricePerPack');
         if (days && cigsPerDay && cigsPerPack && pricePerPack) {
+            const totalCigsSmoked = days * cigsPerDay;
+            const totalPacksSmoked = totalCigsSmoked / cigsPerPack;
+            const totalMoneySpent = totalPacksSmoked * pricePerPack;
+
             // Berechnung der Anzahl der gerauchten Zigaretten pro Jahr, Monat und Tag
             const cigarettesPerYear = cigsPerDay * 365;
             const cigarettesPerMonth = cigsPerDay * 30;
