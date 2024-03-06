@@ -10,9 +10,6 @@ export default function FunFact() {
     const randomMessage = () => messages[(Math.floor(Math.random() * messages.length))];
 
     return (
-        <div>
-            <h2>Funfact</h2>
-            <p>{randomMessage()}</p>
-        </div>
+        <p>{randomMessage()}</p>
     );
 }

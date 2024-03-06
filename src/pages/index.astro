@@ -1,8 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FunFact from '../components/FunFact';
+import Card from '../components/Card';
 const pageTitle = "Übersicht";
 ---
 <BaseLayout pageTitle={pageTitle}>
-	<FunFact />
+
+	<Card cardTitle="Funfact">
+		<FunFact />
+	</Card>
+
+	<Card cardTitle="Rauchfreie Zeit">
+		<p>Du bist <b>HH Stunden MM Minuten SS Sekunden</b> rauchfrei! Weiter  so!</p>
+	</Card>
+
+	<Card cardTitle="Finanzen">
+		<p>
+			Du hast bereits <b>X€</b> gespart!<br>
+			Dein jähliches Ersparnis beläuft sich auf <b>XXXX€</b>. Das sind <b>XXX€</b> im Monat bzw. <b>XX€</b> am Tag!
+		</p>
+	</Card>
+
+	<Card cardTitle="Konsum">
+		
+	</Card>
+
 </BaseLayout>

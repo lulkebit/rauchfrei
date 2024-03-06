@@ -1,9 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../styles/global.css';
 
 export default function Navigation() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light border rounded" style="background: #A4C2A8;">
+        <nav className="navbar navbar-expand-lg navbar-light border rounded" style={{ background: '#ACEB98' }}>
             <a className="navbar-brand" href="/">
                 Rauchfrei
             </a>
