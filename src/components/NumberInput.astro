@@ -1,0 +1,10 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+const { label, placeHolder, name } = Astro.props;
+---
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text rounded-0" id="basic-addon1">{label}</span>
+    </div>
+    <input type="number" class="form-control" placeholder={placeHolder} aria-label={label} aria-describedby="basic-addon1" name={name} onclick="this.select();"/>
+</div>

@@ -1,7 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card.astro';
+import NumberInput from '../components/NumberInput.astro';
+import DatePicker from '../components/DatePicker.astro';
 const pageTitle = "Einstellungen";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome subtitle</h2>
+  <Card cardTitle="Konfiguration" iconClass="fa-solid fa-gears">
+    <NumberInput label="Zigaretten am Tag:" placeHolder="20 Stück" name="cigsPerDay"></NumberInput>
+    <NumberInput label="Zigaretten pro Packung" placeHolder="25 Stück" name="cigsPerPack"></NumberInput>
+    <NumberInput label="Preis pro Packung" placeHolder="10€" name="pricePerPack"></NumberInput>
+    <DatePicker label="Zeitpunkt des Aufhörens" name="dateOfReturn"></DatePicker>
+	</Card>
+  <script>
+    import "../scripts/settings.js";
+  </script>
 </BaseLayout>
