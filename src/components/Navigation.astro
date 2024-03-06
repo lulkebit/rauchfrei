@@ -2,32 +2,40 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 ---
 <nav class="navbar navbar-expand-lg navbar-light border rounded" style={{ background: '#ACEB98' }}>
-    <a class="navbar-brand" href="/">
-        Rauchfrei
-    </a>
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            Rauchfrei
+        </a>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/">
-                    Übersicht
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/health">
-                    Gesundheit
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/savings">
-                    Sparziele
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/settings">
-                    Einstellungen
-                </a>
-            </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        Übersicht
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/health">
+                        Gesundheit
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/savings">
+                        Sparziele
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/settings">
+                        Einstellungen
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>

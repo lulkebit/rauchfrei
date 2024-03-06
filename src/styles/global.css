@@ -14,3 +14,10 @@ h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
 }
+
+.nav-link.active {
+    background-color: #ffffff; /* Hintergrundfarbe des aktiven Tabs */
+    color: #000000; /* Textfarbe des aktiven Tabs */
+    border-radius: 5px; /* Runde Ecken für den aktiven Tab */
+    /* Andere Stile, die Sie hinzufügen möchten */
+}

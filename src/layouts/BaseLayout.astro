@@ -15,5 +15,21 @@ const { pageTitle } = Astro.props;
     <Header />
     <h1>{pageTitle}</h1>
     <slot />
+    <script>
+      // Holen Sie sich den Pfad der aktuellen URL
+      const currentPath = window.location.pathname;
+
+      // Wählen Sie alle Nav-Links aus
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      // Durchlaufen Sie alle Nav-Links
+      navLinks.forEach(link => {
+          // Überprüfen Sie, ob der Link zur aktuellen URL passt
+          if (link.getAttribute('href') === currentPath) {
+              // Fügen Sie die 'active'-Klasse hinzu, wenn der Link zur aktuellen Seite gehört
+              link.classList.add('active');
+          }
+      });
+    </script>
   </body>
 </html>
