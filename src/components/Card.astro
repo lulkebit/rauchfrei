@@ -1,0 +1,15 @@
+---
+import "bootstrap/dist/css/bootstrap.min.css";
+const { iconClass, cardTitle } = Astro.props;
+---
+
+<div class="card" style={{ marginBottom: '20px' }}>
+    <div class="card-header" style={{ color: '#ACEB98' }}>
+        <i class={iconClass}></i> <b>{cardTitle}</b>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+            <slot />
+        </p>
+    </div>
+</div>

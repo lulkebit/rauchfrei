@@ -1,7 +1,13 @@
 ---
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card.astro';
+import ProgressBar from '../components/ProgressBar.astro';
 const pageTitle = "Gesundheit";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome subtitle</h2>
+  <Card cardTitle="Puls und Blutdruck" iconClass="fa-solid fa-heart-pulse">
+    <b>Nach 20 Minuten:</b> Puls und Blutdruck sinken auf normale Werte.
+    <ProgressBar></ProgressBar>
+	</Card>
 </BaseLayout>
