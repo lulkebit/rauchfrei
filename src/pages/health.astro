@@ -1,5 +1,4 @@
 ---
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
 import ProgressBar from '../components/ProgressBar.astro';
@@ -8,6 +7,21 @@ const pageTitle = "Gesundheit";
 <BaseLayout pageTitle={pageTitle}>
   <Card cardTitle="Puls und Blutdruck" iconClass="fa-solid fa-heart-pulse">
     <b>Nach 20 Minuten:</b> Puls und Blutdruck sinken auf normale Werte.
+    <ProgressBar></ProgressBar>
+	</Card>
+
+  <Card cardTitle="Frischer Atem" iconClass="fa-solid fa-head-side-cough">
+    <b>Nach 8 Stunden:</b> Das Kohlenmonoxid im Blut wurde abgebaut und der stinkende Raucheratem hat sich verflüchtigt.
+    <ProgressBar></ProgressBar>
+	</Card>
+  
+  <Card cardTitle="Herzinfarktrisiko" iconClass="fa-solid fa-heart-crack">
+    <b>Nach 24 Stunden:</b> Jetzt schon senkt sich das Risiko einen Herzinfarkt zu bekommen.
+    <ProgressBar></ProgressBar>
+	</Card>
+ 
+  <Card cardTitle="Sinne" iconClass="fa-solid fa-seedling">
+    <b>Nach 2 Tagen:</b> Langsam kehren der natürliche Geruchs- und Geschmakssinn wieder zurück.
     <ProgressBar></ProgressBar>
 	</Card>
 </BaseLayout>
