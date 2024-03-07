@@ -1,27 +1,67 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Cards/Card';
-import ProgressBar from '../components/ProgressBar.astro';
+import ProgressBar from '../components/Bars/ProgressBar';
 const pageTitle = "Gesundheit";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <Card cardTitle="Puls und Blutdruck" iconClass="fa-solid fa-heart-pulse">
+  <Card cardTitle="Puls und Blutdruck" iconClass="fa-solid fa-heart-pulse" client:load>
     <b>Nach 20 Minuten:</b> Puls und Blutdruck sinken auf normale Werte.
-    <ProgressBar></ProgressBar>
+    <ProgressBar minutes="20" client:load></ProgressBar>
 	</Card>
 
-  <Card cardTitle="Frischer Atem" iconClass="fa-solid fa-head-side-cough">
+  <Card cardTitle="Frischer Atem" iconClass="fa-solid fa-head-side-cough" client:load>
     <b>Nach 8 Stunden:</b> Das Kohlenmonoxid im Blut wurde abgebaut und der stinkende Raucheratem hat sich verflüchtigt.
-    <ProgressBar></ProgressBar>
+    <ProgressBar minutes="480" client:load></ProgressBar>
 	</Card>
   
-  <Card cardTitle="Herzinfarktrisiko" iconClass="fa-solid fa-heart-crack">
+  <Card cardTitle="Herzinfarktrisiko" iconClass="fa-solid fa-heart-crack" client:load>
     <b>Nach 24 Stunden:</b> Jetzt schon senkt sich das Risiko einen Herzinfarkt zu bekommen.
-    <ProgressBar></ProgressBar>
+    <ProgressBar minutes="1440" client:load></ProgressBar>
 	</Card>
  
-  <Card cardTitle="Sinne" iconClass="fa-solid fa-seedling">
-    <b>Nach 2 Tagen:</b> Langsam kehren der natürliche Geruchs- und Geschmakssinn wieder zurück.
-    <ProgressBar></ProgressBar>
+  <Card cardTitle="Sinne" iconClass="fa-solid fa-seedling" client:load>
+    <b>Nach 2 Tagen:</b> Nikotin ist aus dem Körper eliminiert. Langsam kehren der natürliche Geruchs- und Geschmakssinn wieder zurück.
+    <ProgressBar minutes="2880" client:load></ProgressBar>
+	</Card>
+
+  <Card cardTitle="Atemwege" iconClass="fa-solid fa-lungs" client:load>
+    <b>Nach 3 Tagen:</b> Die Atemwege entspannen sich, was zu einer leichteren Atmung führt. Energie steigt.
+    <ProgressBar minutes="4320" client:load></ProgressBar>
+	</Card>
+
+  <Card cardTitle="Durchblutung" iconClass="fa-solid fa-droplet" client:load>
+    <b>Nach 2 Wochen:</b> Durchblutung verbessert sich, was zu besserer Hautfarbe und -textur führt.
+    <ProgressBar minutes="20160" client:load></ProgressBar>
+	</Card>
+  
+  <Card cardTitle="Husten & Atemprobleme" iconClass="fa-solid fa-lungs-virus" client:load>
+    <b>Nach 6 Monaten:</b> Husten und Atemprobleme gehen zurück. Flimmerhärchen in den Atemwegen beginnen, sich zu regenerieren, was das Infektionsrisiko verringert.
+    <ProgressBar minutes="262800" client:load></ProgressBar>
+	</Card>
+
+  <Card cardTitle="Koronare Herzkrankheiten" iconClass="fa-solid fa-shield-heart" client:load>
+    <b>Nach 1 Jahr:</b> Das Risiko für koronare Herzkrankheiten halbiert sich im Vergleich zu einem Raucher.
+    <ProgressBar minutes="525600" client:load></ProgressBar>
+	</Card>
+  
+  <Card cardTitle="Krebs" iconClass="fa-solid fa-disease" client:load>
+    <b>Nach 5 Jahren:</b> Das Risiko für Mund-, Rachen-, Speiseröhren- und Blasenkrebs sinkt um die Hälfte.
+    <ProgressBar minutes="2628000" client:load></ProgressBar>
+	</Card>
+  
+  <Card cardTitle="Lungenkrebs" iconClass="fa-solid fa-stethoscope" client:load>
+    <b>Nach 10 Jahren:</b> Das Risiko für Lungenkrebs halbiert sich im Vergleich zu einem Raucher.
+    <ProgressBar minutes="5256000" client:load></ProgressBar>
+	</Card>
+
+  <Card cardTitle="Herzkrankheiten" iconClass="fa-solid fa-heart" client:load>
+    <b>Nach 15 Jahren:</b> Das Risiko für Herzkrankheiten ist das gleiche wie bei einem Nichtraucher.
+    <ProgressBar minutes="7884000" client:load></ProgressBar>
+	</Card>
+
+  <Card cardTitle="COPD" iconClass="fa-solid fa-mask-ventilator" client:load>
+    <b>Nach 20 Jahren:</b> Das Risiko für chronisch obstruktive Lungenerkrankungen (COPD) ist das gleiche wie bei einem Nichtraucher.
+    <ProgressBar minutes="10512000" client:load></ProgressBar>
 	</Card>
 </BaseLayout>

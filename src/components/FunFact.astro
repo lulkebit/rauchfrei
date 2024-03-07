@@ -54,12 +54,7 @@ const messages = [
     'Nichtraucher haben einen klaren Vorteil: Sie müssen nie wieder den lästigen Geruch von Rauch aus ihrer Kleidung waschen!',
 ];
 
-console.log(messages.length); // 40
-
-
-    const randomMessage = () => messages[(Math.floor(Math.random() * messages.length))];
-
-    return (
-        randomMessage()
-    );
+return (
+    messages[(Math.floor(Math.random() * messages.length))]
+);
 ---
