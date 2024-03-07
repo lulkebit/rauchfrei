@@ -1,47 +1,33 @@
-# Astro Starter Kit: Minimal
+# Rauchfrei Astro Website
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Willkommen auf der Rauchfrei Astro Website! Diese Website ist dazu da, Ihnen zu helfen, Ihren Weg zu einem rauchfreien Leben zu verfolgen und Ihre Fortschritte zu verfolgen. Durch die Rauchfreiheit können Sie nicht nur Ihre Gesundheit verbessern, sondern auch Geld sparen und ein erfüllteres Leben führen.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Screenshots
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Fortschrittsübersicht
 
-## 🚀 Project Structure
+![Fortschrittsübersicht](screenshots/fortschritt.png)
 
-Inside of your Astro project, you'll see the following folders and files:
+Diese Übersicht zeigt, wie lange Sie schon rauchfrei sind, wie viel Geld Sie gespart haben, wie viele Zigaretten Sie vermieden haben und den Gesundheitszustand.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### Gesundheit
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+![Gesundheit](screenshots/gesundheit.png)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Hier können Sie den fortschritt ihrer Genesung verfolgen und sehen wann Sie was errreichen werden.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Features
 
-## 🧞 Commands
+- **Rauchfrei-Tage zählen:** Verfolgen Sie, wie lange Sie schon rauchfrei sind.
+- **Geldsparrechner:** Sehen Sie, wie viel Geld Sie durch das Beenden des Rauchens gespart haben.
+- **Zigaretten vermieden:** Erfahren Sie, wie viele Zigaretten Sie vermieden haben.
+- **Gesundheitsverbesserung:** Erhalten Sie Informationen darüber, wie sich Ihre Gesundheit seit dem Rauchstopp verbessert hat.
+- **Sparziele setzen:** Setzen Sie sich individuelle Sparziele und verfolgen Sie Ihren Fortschritt.
+- **Neues Design:** Wir arbeiten an einem neuen Design, um Ihr Rauchfrei-Erlebnis zu verbessern.
 
-All commands are run from the root of the project, from a terminal:
+## Todos
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Implementierung der Sparziele
+- Neues Design der Website für eine verbesserte Benutzererfahrung
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Vielen Dank, dass Sie sich für einen rauchfreien Lebensstil entschieden haben. Wir hoffen, dass diese Website Ihnen auf Ihrem Weg zur Rauchfreiheit helfen kann!
