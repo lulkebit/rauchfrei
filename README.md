@@ -16,6 +16,11 @@ Diese Übersicht zeigt, wie lange Sie schon rauchfrei sind, wie viel Geld Sie ge
 
 Hier können Sie den fortschritt ihrer Genesung verfolgen und sehen wann Sie was errreichen werden.
 
+### Sparziele
+
+![Sparziele](screenshots/sparziele.png)
+Sie können sich selber persönliche Sparziele erstellen und überblick über diese behalten.
+
 ## Features
 
 - **Rauchfrei-Tage zählen:** Verfolgen Sie, wie lange Sie schon rauchfrei sind.
@@ -27,7 +32,7 @@ Hier können Sie den fortschritt ihrer Genesung verfolgen und sehen wann Sie was
 
 ## Todos
 
-- Implementierung der Sparziele
 - Neues Design der Website für eine verbesserte Benutzererfahrung
+- Firebase implementierung
 
 Vielen Dank, dass Sie sich für einen rauchfreien Lebensstil entschieden haben. Wir hoffen, dass diese Website Ihnen auf Ihrem Weg zur Rauchfreiheit helfen kann!
