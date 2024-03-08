@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import AddCardButton from '../components/Inputs/AddCardButton';
 const pageTitle = "Sparziele";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome subtitle</h2>
+  <AddCardButton client:load></AddCardButton>
 </BaseLayout>
