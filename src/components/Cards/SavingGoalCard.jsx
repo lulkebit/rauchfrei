@@ -1,7 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import ProgressBar from '../Bars/ProgressBarMoney';
 
 const Card = ({ cardId, cardTitle, iconClass, children, onRemove }) => {
+  const formattedPrice = Number(children).toLocaleString('de-DE');
+
   return (
     <div className="card" style={{ marginBottom: '20px' }}>
       <div className="card-header" style={{ color: '#ACEB98' }}>
@@ -10,8 +13,9 @@ const Card = ({ cardId, cardTitle, iconClass, children, onRemove }) => {
       </div>
       <div className="card-body">
         <p className="card-text">
-          {children}
+          Preis: {formattedPrice}€
         </p>
+        <ProgressBar price={children}></ProgressBar>
       </div>
     </div>
   );

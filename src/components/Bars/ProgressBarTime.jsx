@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'preact/hooks';
 
-const ProgressBar = ({minutes}) => {
+const ProgressBarTime = ({minutes}) => {
     const progressBarRef = useRef(null);
 
     useEffect(() => {
@@ -33,5 +33,5 @@ const ProgressBar = ({minutes}) => {
     );
 };
 
-export default ProgressBar;
+export default ProgressBarTime;
 
