@@ -1,7 +1,7 @@
 import { Component } from 'preact';
 import Card from '../Cards/SavingGoalCard';
-import TextInput from '../Inputs/TextInput';
-import NumberInput from '../Inputs/NumberInput';
+import TextInput from './TextInput';
+import NumberInput from './NumberInput';
 
 class NewCardComponent extends Component {
   constructor(props) {
